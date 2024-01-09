@@ -122,7 +122,7 @@ public class Main {
 
                 if(main[i].equals(keywords[a])){
 
-                    main[i] = "\u001B[38;5;202m" + main[i];
+                    main[i] = "\u001B[38;5;202m" + main[i]; //h
 
                 }
 
