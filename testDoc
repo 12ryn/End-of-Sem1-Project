@@ -5,11 +5,16 @@ public class WriteFile {
 
    public static void main(String[] args) {
        try {
+
+           int a = 8923;
+
            FileWriter fw = new FileWriter("data1.txt");
 
            fw.write("test data");
            fw.close();
            System.out.println("\nSuccessfully wrote to the file.");
+
+           int b = 8923923;
        }
        catch (IOException e) {
            System.out.println("\nAn error occurred.");

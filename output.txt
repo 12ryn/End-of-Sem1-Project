@@ -1,0 +1,22 @@
+﻿import java.io.FileWriter;   // Import the FileWriter class 
+import java.io.IOException;  // Import the IOException class to handle errors 
+ 
+ 
+public class WriteFile { 
+ 
+ 
+   public static void main(String[] args) { 
+       try { 
+           FileWriter fw = new FileWriter("data1.txt"); 
+ 
+ 
+           fw.write("test data"); 
+           fw.close(); 
+           System.out.println("\nSuccessfully wrote to the file."); 
+       } 
+       catch (IOException e) { 
+           System.out.println("\nAn error occurred."); 
+           e.printStackTrace(); 
+       } 
+   } 
+} 
